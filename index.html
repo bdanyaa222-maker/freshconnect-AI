@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshConnect - Modern College Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-graduation-cap"></i> FreshConnect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="department.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notices.html">Notices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="papers.html">Papers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hub.html">Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="timetable.html">Timetable</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 500px; display: flex; align-items: center;">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Welcome to FreshConnect</h1>
+            <p class="lead mb-4">Your Modern College Hub - Connect, Learn & Grow</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="about.html" class="btn btn-light btn-lg">Learn More</a>
+                <a href="login.html" class="btn btn-outline-light btn-lg">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">What's Inside?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-book fa-3x text-primary mb-3"></i>
+                    <h5>Academic Resources</h5>
+                    <p>Access departments, faculty, and academic information</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-users fa-3x text-success mb-3"></i>
+                    <h5>Student Clubs</h5>
+                    <p>Join clubs and explore extracurricular activities</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-calendar fa-3x text-danger mb-3"></i>
+                    <h5>Events & Updates</h5>
+                    <p>Stay updated with events and important notices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Quick Navigation</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <a href="faculty.html" class="btn btn-outline-primary w-100 py-3">Faculty Directory</a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <a href="department.html" class="btn btn-outline-success w-100 py-3">Departments</a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <a href="clubs.html" class="btn btn-outline-danger w-100 py-3">Clubs</a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <a href="events.html" class="btn btn-outline-warning w-100 py-3">Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2026 FreshConnect. All rights reserved.</p>
+            <p class="small">Connecting Students, Faculty & Opportunities</p>
+        </div>
+    </footer>
+
+    <!-- Floating AI Chatbot -->
+    <div id="chat-window">
+        <div class="chat-header">
+            <h5 class="mb-0 text-cyan">FreshConnect AI</h5>
+            <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message bot">
+                <strong>Hi!</strong> I'm FreshConnect AI. How can I help you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask me anything...">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <div id="ai-chatbot-btn" onclick="toggleChat()"><i class="fa-solid fa-message"></i></div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2026 FreshConnect. All rights reserved.</p>
+            <p class="small">Connecting Students, Faculty & Opportunities</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

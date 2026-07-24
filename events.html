@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - FreshConnect AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white fs-4" href="index.html">
+                <i class="fa-solid fa-graduation-cap text-gradient me-2"></i> FreshConnect AI
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="department.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="notices.html">Notices</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="papers.html">Papers</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="hub.html">Hub</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="timetable.html">Timetable</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="map.html">Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <section class="pt-5 mt-5 pb-3 text-center">
+        <div class="container mt-5">
+            <h1 class="display-4 fw-bold">Campus <span class="text-gradient">Events</span></h1>
+            <p class="lead text-secondary max-w-75 mx-auto">Discover and register for upcoming hackathons, symposiums, and cultural fests.</p>
+        </div>
+    </section>
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="glass-card d-flex flex-column flex-md-row overflow-hidden h-100">
+                        <div class="bg-dark p-4 d-flex align-items-center justify-content-center" style="min-width: 200px;">
+                            <div class="text-center">
+                                <h3 class="fw-bold text-cyan mb-0">NOV</h3>
+                                <h1 class="display-4 fw-bold text-white">15</h1>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="fw-bold mb-0">AI Hackathon 2026</h4>
+                                <span class="badge bg-primary rounded-pill">Technical</span>
+                            </div>
+                            <p class="text-secondary small mb-3"><i class="fa-solid fa-location-dot me-2"></i>Main Auditorium • 9:00 AM</p>
+                            <p class="text-white small">Join the largest AI hackathon on campus. Build innovative GenAI solutions within 24 hours to win grand prizes!</p>
+                            
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <button class="btn btn-primary-custom">Register Now</button>
+                                <div class="text-cyan small fw-bold"><i class="fa-solid fa-stopwatch me-1"></i> Ends in 3 days</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card d-flex flex-column flex-md-row overflow-hidden h-100">
+                        <div class="bg-dark p-4 d-flex align-items-center justify-content-center" style="min-width: 200px;">
+                            <div class="text-center">
+                                <h3 class="fw-bold text-purple mb-0" style="color:var(--accent-purple)">DEC</h3>
+                                <h1 class="display-4 fw-bold text-white">05</h1>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="fw-bold mb-0">Annual Tech Symposium</h4>
+                                <span class="badge bg-purple rounded-pill" style="background:var(--accent-purple)">Symposium</span>
+                            </div>
+                            <p class="text-secondary small mb-3"><i class="fa-solid fa-location-dot me-2"></i>CSE Block • 10:00 AM</p>
+                            <p class="text-white small">Present your research papers, participate in project expos, and network with industry experts.</p>
+                            
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <button class="btn btn-primary-custom">Register Now</button>
+                                <div class="text-cyan small fw-bold"><i class="fa-solid fa-stopwatch me-1"></i> Ends in 20 days</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Floating AI Chatbot -->
+    <div id="chat-window">
+        <div class="chat-header">
+            <h5 class="mb-0 text-cyan">FreshConnect AI</h5>
+            <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message bot">
+                <strong>Hi!</strong> I'm FreshConnect AI. How can I help you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask me anything...">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <div id="ai-chatbot-btn" onclick="toggleChat()"><i class="fa-solid fa-message"></i></div>
+    
+    <footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+        <div class="container">
+            <p>&copy; 2026 FreshConnect. All rights reserved.</p>
+            <p class="small">Connecting Students, Faculty & Opportunities</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

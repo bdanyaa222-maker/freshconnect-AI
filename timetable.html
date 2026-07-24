@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable - FreshConnect AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white fs-4" href="index.html">
+                <i class="fa-solid fa-graduation-cap text-gradient me-2"></i> FreshConnect AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="notices.html">Notices</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="papers.html">Papers</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="hub.html">Hub</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="timetable.html">Timetable</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="map.html">Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container mt-5">
+            <h1 class="display-4 fw-bold">Weekly <span class="text-gradient">Timetable</span></h1>
+            <button class="btn btn-neon mt-3"><i class="fa-solid fa-download me-2"></i>Download PDF</button>
+        </div>
+    </section>
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="glass-card p-4 overflow-auto">
+                <table class="table table-dark table-hover table-bordered text-center align-middle mb-0" style="min-width: 800px; --bs-table-bg: transparent;">
+                    <thead>
+                        <tr class="text-cyan">
+                            <th>Day / Time</th>
+                            <th>09:00 - 10:00</th>
+                            <th>10:00 - 11:00</th>
+                            <th>11:15 - 12:15</th>
+                            <th>12:15 - 01:15</th>
+                            <th>01:15 - 02:15</th>
+                            <th>02:15 - 04:15</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active" style="--bs-table-accent-bg: rgba(6, 182, 212, 0.1);">
+                            <th class="text-cyan">Monday<br><small>(Today)</small></th>
+                            <td>Data Structures<br><small class="text-secondary">Dr. Doe • R201</small></td>
+                            <td>Database Mgmt<br><small class="text-secondary">Prof. Smith • R201</small></td>
+                            <td>Operating Systems<br><small class="text-secondary">Dr. Allen • R205</small></td>
+                            <td class="text-secondary">LUNCH</td>
+                            <td>Web Tech<br><small class="text-secondary">Prof. Kim • R202</small></td>
+                            <td>DBMS Lab<br><small class="text-secondary">Lab 3</small></td>
+                        </tr>
+                        <tr>
+                            <th>Tuesday</th>
+                            <td>Computer Networks<br><small class="text-secondary">Dr. Ray • R204</small></td>
+                            <td>Data Structures<br><small class="text-secondary">Dr. Doe • R201</small></td>
+                            <td>Software Eng.<br><small class="text-secondary">Prof. Lee • R201</small></td>
+                            <td class="text-secondary">LUNCH</td>
+                            <td colspan="2">Web Tech Lab<br><small class="text-secondary">Lab 2</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating AI Chatbot -->
+    <div id="chat-window">
+        <div class="chat-header">
+            <h5 class="mb-0 text-cyan">FreshConnect AI</h5>
+            <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message bot">
+                <strong>Hi!</strong> I'm FreshConnect AI. How can I help you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask me anything...">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <div id="ai-chatbot-btn" onclick="toggleChat()"><i class="fa-solid fa-message"></i></div>
+    
+    <footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+        <div class="container">
+            <p>&copy; 2026 FreshConnect. All rights reserved.</p>
+            <p class="small">Connecting Students, Faculty & Opportunities</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
