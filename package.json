@@ -1,9 +1,15 @@
-{
+ {
+  "name": "freshconnect-ai",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "@google/genai": "^2.13.0",
-    "cors": "^2.8.6",
+    "@vercel/node": "^5.8.27",
+    "cors": "^2.8.5",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mysql2": "^3.23.1"
+    "express": "^5.2.1"
   }
 }
